@@ -34,7 +34,14 @@ body {
     height: 32rem;
   }
 
-  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1);
+  }
+
+  .button-slide {
+    filter: invert(1);
+  }
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
