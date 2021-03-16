@@ -19,8 +19,8 @@
     <!-- Bootstrap core CSS -->
     <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
-    <style>
-        .bd-placeholder-img {
+    <!-- <style>
+         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             -webkit-user-select: none;
@@ -32,8 +32,14 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
+        } 
+        @media screen and(max-width: 400px) {
+            #nav-container{
+                display: flex;
+                flex-direction: column;
+            }
         }
-    </style>
+    </style> -->
 
 
     <!-- Custom styles for this template -->
@@ -44,9 +50,9 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
+            <div class="container-fluid" id="nav-container">
                 <img src="./images/logo renew.jpg" style="width: 50px; height: 60px; margin-right: 10px;">
-                <h1 class="navbar-brand fs-3" href="#">Growers Advantage</h1>
+                <h1 class="navbar-brand fs-3">Growers Advantage</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -54,21 +60,30 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                     <ul class="navbar-nav  mb-2 mb-md-0 float-end">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./assets/industrial.html">Industrial</a></li>
+                                <li><a class="dropdown-item" href="./assets/personal.html">Personal</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="./assets/science.html">Science</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Science</a>
+                            <a class="nav-link" href="./assets/about-us.html">About Us</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="./assets/issues.html">Issues</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Issues</a>
-                        </li>
-
                     </ul>
                     <!-- <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -100,9 +115,6 @@
 
                     <div class="container">
                         <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
-                            <!-- <h1>Example headline.</h1>
-                            <p>Some representative placeholder content for the first slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
                             <img src="./images/logo renew.jpg" alt="logo"
                                 style="max-height: 350px; max-width: 300px; width: 100%;">
                             <h2 class="text-dark">Coming Soon!</h2>
@@ -114,13 +126,11 @@
                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <rect width="100%" height="100%" fill="#fff" />
-                    </svg>cd <div class=""></div>
+                    </svg>
+                    <div class=""></div>
 
                     <div class="container">
                         <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
-                            <!-- <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
                             <img src="./images/light.jpeg" alt="end-product"
                                 style="max-height: 350px; max-width: 300px;  width: 100%;">
                             <h2 class="text-dark">Coming Soon!</h2>
@@ -136,9 +146,6 @@
 
                     <div class="container">
                         <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
-                            <!-- <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
                             <img src="./images/light-2.png" alt="end-product"
                                 style="height: 300px; width: 500px; width: 100%;">
                             <h2 class="text-dark">Coming Soon!</h2>
@@ -213,7 +220,7 @@
 
             <!-- START THE FEATURETTES -->
 
-            <!-- <hr class="featurette-divider">
+            <hr class="featurette-divider">
 
             <div class="row featurette">
                 <div class="col-md-7">
@@ -274,28 +281,28 @@
                     </svg>
 
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <hr class="featurette-divider"> -->
+            <hr class="featurette-divider">
 
             <!-- /END THE FEATURETTES -->
 
-            <!-- </div>/.container -->
+        </div>
 
 
-            <!-- FOOTER -->
-            <!-- <footer class="container">
+        <!-- FOOTER -->
+        <footer class="container">
             <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p>&copy; &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
-    </main>  -->
+    </main>
 
 
-            <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
-            <!-- JavaScript Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-                crossorigin="anonymous"></script>
+    <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
 </body>
 
